@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "harsh_beginning:item/flint_hoe"
+	}
+}

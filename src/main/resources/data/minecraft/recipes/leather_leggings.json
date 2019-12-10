@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+		"pattern": [
+			"XXX",
+			"X X",
+    		"X X"
+	],
+	"key": {
+		"X": {
+			"tag": "harsh_beginning:leather_pieces"
+		}
+	},
+		"result": {
+			"item": "minecraft:leather_leggings"
+	}
+}
