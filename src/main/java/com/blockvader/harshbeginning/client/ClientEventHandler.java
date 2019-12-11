@@ -1,7 +1,7 @@
-package com.example.examplemod.client;
+package com.blockvader.harshbeginning.client;
 
-import com.example.examplemod.HarshBeginning;
-import com.example.examplemod.init.ModItems;
+import com.blockvader.harshbeginning.HarshBeginning;
+import com.blockvader.harshbeginning.init.ModItems;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

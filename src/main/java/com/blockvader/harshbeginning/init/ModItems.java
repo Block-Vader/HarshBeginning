@@ -1,11 +1,12 @@
-package com.example.examplemod.init;
+package com.blockvader.harshbeginning.init;
 
-import com.example.examplemod.HarshBeginning;
-import com.example.examplemod.items.ModItemTier;
+import com.blockvader.harshbeginning.HarshBeginning;
+import com.blockvader.harshbeginning.items.ModItemTier;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
@@ -42,8 +43,13 @@ public class ModItems {
 		event.getRegistry().register(FLINT_SHOVEL);
 		FLINT_HOE = new HoeItem(ModItemTier.FLINT, -3.0F, new Item.Properties()).setRegistryName("flint_hoe");
 		event.getRegistry().register(FLINT_HOE);
+		
+		event.getRegistry().register(new BlockItem(ModBlocks.COPPER_ORE, new Item.Properties()).setRegistryName("copper_ore"));
+		event.getRegistry().register(new BlockItem(ModBlocks.TIN_ORE, new Item.Properties()).setRegistryName("tin_ore"));
+		event.getRegistry().register(new BlockItem(ModBlocks.SMELTERY, new Item.Properties()).setRegistryName("smeltery"));
 	}
 	
+	@SuppressWarnings("deprecation")
 	public static void registerRenders()
 	{
 		registerRender(LEATHER_PIECE);
@@ -53,6 +59,10 @@ public class ModItems {
 		registerRender(FLINT_SWORD);
 		registerRender(FLINT_SHOVEL);
 		registerRender(FLINT_HOE);
+		
+		registerRender(Item.getItemFromBlock(ModBlocks.COPPER_ORE));
+		registerRender(Item.getItemFromBlock(ModBlocks.TIN_ORE));
+		registerRender(Item.getItemFromBlock(ModBlocks.SMELTERY));
 	}
 	
 	private static void registerRender(Item item)

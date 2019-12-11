@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.blockvader.harshbeginning;
 
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;

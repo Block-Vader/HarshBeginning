@@ -1,4 +1,4 @@
-package com.example.examplemod.items;
+package com.blockvader.harshbeginning.items;
 
 import java.util.function.Supplier;
 
