@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "harsh_beginning:banned_recipe"
+	},
+	"result": "minecraft:iron_ingot",
+	"experience": 0.7,
+	"cookingtime": 200
+}

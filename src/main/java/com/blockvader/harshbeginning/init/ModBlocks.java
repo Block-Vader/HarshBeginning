@@ -1,6 +1,7 @@
 package com.blockvader.harshbeginning.init;
 
 import com.blockvader.harshbeginning.HarshBeginning;
+import com.blockvader.harshbeginning.blocks.SmelteryBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.OreBlock;
@@ -19,8 +20,11 @@ public class ModBlocks {
 	@SubscribeEvent
 	public static void onBlocksRegistry(final RegistryEvent.Register<Block> event)
 	{
-		COPPER_ORE = new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)).setRegistryName("copper_ore");
-		TIN_ORE = new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)).setRegistryName("tin_ore");
+		COPPER_ORE = new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F)).setRegistryName("copper_ore");
+		TIN_ORE = new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F)).setRegistryName("tin_ore");
+		SMELTERY = new SmelteryBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.5F)).setRegistryName("smeltery");
 		event.getRegistry().register(COPPER_ORE);
+		event.getRegistry().register(TIN_ORE);
+		event.getRegistry().register(SMELTERY);
 	}
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "harsh_beginning:item/tin_ingot"
+    }
+}

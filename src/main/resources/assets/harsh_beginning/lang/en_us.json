@@ -1,8 +1,36 @@
 {
+	"block.harsh_beginning.copper_ore": "Copper Ore",
+	"block.harsh_beginning.smeltery": "Smeltery",
+	"block.harsh_beginning.tin_ore": "Tin Ore",
+	
+	"container.harsh_beginning.smeltery": "Smeltery",
+	
+	"harsh_beginning.recipe_banned": "This recipe has been banned by Harsh Beginning mod",
+	
+	"item.harsh_beginning.banned_recipe": "Banned Recipe",
+	"item.harsh_beginning.bronze_ingot": "Bronze Ingot",
+	"item.harsh_beginning.copper_ingot": "Copper Ingot",
 	"item.harsh_beginning.leather_piece": "Leather Piece",
 	"item.harsh_beginning.flint_axe": "FLint Axe",
 	"item.harsh_beginning.flint_pickaxe": "FLint Pickaxe",
 	"item.harsh_beginning.flint_sword": "Flint Sword",
 	"item.harsh_beginning.flint_shovel": "Flint Shovel",
-	"item.harsh_beginning.flint_hoe": "Flint Hoe"
+	"item.harsh_beginning.flint_hoe": "Flint Hoe",
+	"item.harsh_beginning.bronze_axe": "Bronze Axe",
+	"item.harsh_beginning.bronze_pickaxe": "Bronze Pickaxe",
+	"item.harsh_beginning.bronze_sword": "Bronze Sword",
+	"item.harsh_beginning.bronze_shovel": "Bronze Shovel",
+	"item.harsh_beginning.bronze_hoe": "Bronze Hoe",
+	"item.harsh_beginning.tin_ingot": "Tin Ingot",
+	
+	"tooltip.harsh_beginning.minecraft:wooden_axe_banned": "Wood isn't a good material to make an axe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:wooden_hoe_banned": "Wood isn't a good material to make a hoe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:wooden_pickaxe_banned": "Wood isn't a good material to make a pickaxe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:wooden_shovel_banned": "Wood isn't a good material to make a shovel from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:wooden_sword_banned": "Wood isn't a good material to make a sword from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:stone_axe_banned": "Cobblestone isn't a good material to make an axe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:stone_hoe_banned": "Cobblestone isn't a good material to make a hoe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:stone_pickaxe_banned": "Cobblestone isn't a good material to make a pickaxe from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:stone_shovel_banned": "Cobblestone isn't a good material to make a shovel from. Try flint instead!",
+	"tooltip.harsh_beginning.minecraft:stone_sword_banned": "Cobblestone isn't a good material to make a sword from. Try flint instead!"
 }

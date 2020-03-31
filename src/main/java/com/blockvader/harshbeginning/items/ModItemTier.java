@@ -32,27 +32,33 @@ public enum ModItemTier implements IItemTier {
 	      this.repairMaterial = new LazyLoadBase<>(repairMaterialIn);
 	   }
 
-	   public int getMaxUses() {
+	   @Override
+	public int getMaxUses() {
 	      return this.maxUses;
 	   }
 
-	   public float getEfficiency() {
+	   @Override
+	public float getEfficiency() {
 	      return this.efficiency;
 	   }
 
-	   public float getAttackDamage() {
+	   @Override
+	public float getAttackDamage() {
 	      return this.attackDamage;
 	   }
 
-	   public int getHarvestLevel() {
+	   @Override
+	public int getHarvestLevel() {
 	      return this.harvestLevel;
 	   }
 
-	   public int getEnchantability() {
+	   @Override
+	public int getEnchantability() {
 	      return this.enchantability;
 	   }
 
-	   public Ingredient getRepairMaterial() {
+	   @Override
+	public Ingredient getRepairMaterial() {
 	      return this.repairMaterial.getValue();
 	   }
 	}

@@ -1,6 +1,8 @@
 package com.blockvader.harshbeginning;
 
-import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -14,13 +16,20 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.blockvader.harshbeginning.client.SmelteryScreen;
+import com.blockvader.harshbeginning.init.ModContainers;
+import com.blockvader.harshbeginning.init.ModItems;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(HarshBeginning.MOD_ID)
 public class HarshBeginning
 {
     public static final String MOD_ID = "harsh_beginning";
+    
+    public static List<Item> bannedItems = new ArrayList<Item>();
 	
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -40,15 +49,25 @@ public class HarshBeginning
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        OreGeneration.setUpOreGen();
+        bannedItems.add(Items.WOODEN_AXE);
+        bannedItems.add(Items.WOODEN_HOE);
+        bannedItems.add(Items.WOODEN_PICKAXE);
+        bannedItems.add(Items.WOODEN_SHOVEL);
+        bannedItems.add(Items.WOODEN_SWORD);
+        bannedItems.add(Items.STONE_AXE);
+        bannedItems.add(Items.STONE_HOE);
+        bannedItems.add(Items.STONE_PICKAXE);
+        bannedItems.add(Items.STONE_SHOVEL);
+        bannedItems.add(Items.STONE_SWORD);
     }
 
-    private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
-    }
+    private void doClientStuff(final FMLClientSetupEvent event)
+	{
+		ModItems.registerRenders();
+		
+		ScreenManager.registerFactory(ModContainers.SMELTERY, SmelteryScreen::new);
+	}
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {

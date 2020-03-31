@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BBB",
+		"BXB",
+		"###"
+	],
+	"key": {
+		"B": {
+			"tag": "forge:ingots/brick"
+		},
+		"#": {
+			"item": "minecraft:smooth_stone"
+		},
+		"X": {
+			"item": "minecraft:furnace"
+		}
+	},
+		"result": {
+		"item": "harsh_beginning:smeltery"
+	}
+}

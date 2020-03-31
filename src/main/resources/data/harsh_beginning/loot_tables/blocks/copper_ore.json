@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:blocks",
+	"pools": [
+		{
+			"name": "harsh_beginning:copper_ore",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "harsh_beginning:copper_ore"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}

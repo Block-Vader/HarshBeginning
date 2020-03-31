@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:blocks",
+	"pools": [
+		{
+			"name": "harsh_beginning:smeltery",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:copy_name",
+							"source": "block_entity"
+						}
+					],
+					"name": "harsh_beginning:smeltery"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}
